@@ -270,4 +270,11 @@
 
         }
     }
+
+    .about-me__skills {
+        grid-template: repeat(2, 50px)/repeat(1, auto);
+    }    
+    .experience__wrapper {
+        overflow: hidden;
+    }
 }
