@@ -1,445 +1,1049 @@
 <!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Portfolio</title>
-    <meta name="title" content="Мое портфолио">
-    <meta name="description" content="Здесь вы сможете ознакомиться с моими работами и узнать больше обо мне">
-
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://metatags.io/">
-    <meta property="og:title" content="Мое портфолио">
-    <meta property="og:description" content="Здесь вы сможете ознакомиться с моими работами и узнать больше обо мне">
-    <meta property="og:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
-
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://metatags.io/">
-    <meta property="twitter:title" content="Мое портфолио">
-    <meta property="twitter:description" content="Здесь вы сможете ознакомиться с моими работами и узнать больше обо мне">
-    <meta property="twitter:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
-
-    <!-- Favicon  -->
-    <link rel="apple-touch-icon" sizes="180x180" href="./icons/favicon_io/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./icons/favicon_io/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./icons/favicon_io/favicon-16x16.png">
-    <link rel="manifest" href="./icons/favicon_io/site.webmanifest">
-
-    <link rel="stylesheet" href="css/style.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-</head>
-<body>
-
-    <aside class="social">        
-        <a href="#">
-            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M-7.46167e-07 2.92969L-1.28061e-07 17.0703C-5.74539e-08 18.6856 1.31439 20 2.92969 20L17.0703 20C18.6856 20 20 18.6856 20 17.0703L20 11.1719L12.9297 11.1719L12.9297 13.5156L9.41406 13.5156L9.41406 11.1719L7.03125 11.1719C5.09262 11.1719 3.51562 9.59488 3.51562 7.65625L3.51562 4.10156L7.03125 4.10156L7.03125 7.65625L9.41406 7.65625L9.41406 4.10156L12.9297 4.6875L12.9297 7.65625L20 7.65625L20 2.92969C20 1.31439 18.6856 -8.16774e-07 17.0703 -7.46167e-07L2.92969 -1.28061e-07C1.31439 -5.74539e-08 -8.16774e-07 1.31439 -7.46167e-07 2.92969Z" fill="black"/>
-            </svg>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Elgiz İsmayilov - Personal Portfolio Website Template"
+    />
+    <meta
+      name="keywords"
+      content="blog, business card, creative, creative portfolio, cv theme, online resume, personal, portfolio, professional cv, responsive portfolio, resume, resume theme, vcard"
+    />
+    <meta name="author" content="Elgiz İsmayilov" />
+    <title>Elgiz İsmayilov - Personal Portfolio Website</title>
+    <!--favicon-img-->
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--favicon-img-->
+    <!--main css file should not be removed -->
+    <link rel="stylesheet" href="css/index.css" />
+    <!--main css file-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+  </head>
+  <body>
+    <!--contains all the div-->
+    <div id="all">
+      <!--mouse  follower-->
+      <div class="cursor"></div>
+      <!--mouse  follower-->
+      <!--loader-->
+      <div id="loader"><span class="color">Elgiz</span>İsmayilov</div>
+      <!--loader-end-->
+      <!--link-screen-->
+      <div id="breaker"></div>
+      <div id="breaker-two"></div>
+      <!--link-screen-->
+      <!--Main-Section-->
+      <!--Navigator-fullscreen-->
+      <div id="navigation-content">
+        <div class="logo">
+          <img src="images/Elgiz İsmayilov logo.png" alt="logo" />
+        </div>
+        <div class="navigation-close">
+          <span class="close-first"></span>
+          <span class="close-second"></span>
+        </div>
+        <div class="navigation-links">
+          <a href="#" data-text="HOME" id="home-link">HOME</a>
+          <a href="#" data-text="ABOUT" id="about-link">ABOUT</a>
+          <!-- <a href="#" data-text="BLOG" id="blog-link" >BLOG</a> -->
+          <a href="#" data-text="PORTFOLIO" id="portfolio-link">PORTFOLIO</a>
+          <a href="#" data-text="CONTACT" id="contact-link">CONTACT</a>
+        </div>
+      </div>
+      <!--Navigator-Fullscreen END-->
+      <!--Home Page-->
+      <!--Menubar-->
+      <div id="navigation-bar">
+        <img src="images/Elgiz İsmayilov logo.png" alt="logo" />
+        <div class="menubar">
+          <span class="first-span"></span>
+          <span class="second-span"></span>
+          <span class="third-span"></span>
+        </div>
+      </div>
+      <!--Menubar End-->
+      <!--Header-->
+      <div id="header">
+        <div id="particles"></div>
+        <!--Social Media Links-->
+        <div class="social-media-links">
+          <a href="#"
+            ><img
+              src="images/instagram logo.png"
+              class="social-media"
+              alt="instagram-logo" /></a
+          ><!--Your instagram homepage link inser in place of "#"-->
+          <a href="#"
+            ><img
+              src="images/facebook logo.png"
+              class="social-media"
+              alt="facebook-logo"
+          /></a>
+          <a href="https://linkedin.com/in/elgiz-ismayilov-178a2422b"
+            ><img
+              src="images/linkedin logo.png"
+              class="social-media"
+              alt="linkedin-logo"
+          /></a>
+          <a href="https://github.com/elgiz20002000">
+            <!-- <img src="images/twitter logo.png" class="social-media" alt="twitter-logo"/> -->
+            <i class="fa-brands fa-github social-media" ></i>
         </a>
-
-        <a href="#">
-            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M-6.01032e-07 6.25L-2.73196e-07 13.75C-1.22337e-07 17.2012 2.79875 20 6.25 20L13.75 20C17.2013 20 20 17.2012 20 13.75L20 6.25C20 2.79875 17.2012 -7.51891e-07 13.75 -6.01032e-07L6.25 -2.73196e-07C2.79875 -1.22337e-07 -7.51891e-07 2.79875 -6.01032e-07 6.25ZM13.75 1.875C16.1625 1.875 18.125 3.8375 18.125 6.25L18.125 13.75C18.125 16.1625 16.1625 18.125 13.75 18.125L6.25 18.125C3.8375 18.125 1.875 16.1625 1.875 13.75L1.875 6.25C1.875 3.8375 3.8375 1.875 6.25 1.875L13.75 1.875Z" fill="black"/>
-                <path d="M5 10C5 12.7612 7.23875 15 10 15C12.7613 15 15 12.7612 15 10C15 7.23875 12.7612 5 10 5C7.23875 5 5 7.23875 5 10ZM13.125 10C13.125 11.7225 11.7225 13.125 10 13.125C8.27625 13.125 6.875 11.7225 6.875 10C6.875 8.2775 8.27625 6.875 10 6.875C11.7225 6.875 13.125 8.2775 13.125 10Z" fill="black"/>
-                <path d="M5.29123 4.625C5.29123 4.25704 4.99295 3.95875 4.62499 3.95875C4.25703 3.95875 3.95874 4.25704 3.95874 4.625C3.95874 4.99296 4.25703 5.29125 4.62499 5.29125C4.99295 5.29125 5.29123 4.99296 5.29123 4.625Z" fill="black"/>
-            </svg>
-        </a>
-
-        <a href="#">
-            <svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M-4.37114e-07 9.99951C-1.95608e-07 15.5245 4.36167 19.9995 9.74107 19.9995C14.0457 19.9995 17.6962 17.1345 18.9832 13.162C19.0749 12.662 18.7734 12.4787 18.5148 12.4787C18.2835 12.4787 17.6706 12.487 16.8585 12.4912C17.4459 15.2728 15.5517 15.8595 15.5517 15.8595C14.4274 16.3145 14.1267 16.972 14.1267 16.972C13.5228 17.8778 13.5352 16.902 13.5352 16.902C13.603 15.8978 14.5389 15.3703 14.5389 15.3703C16.0283 14.4787 15.5979 13.0295 15.3493 12.4578C14.719 12.3678 14.2903 12.1103 14.0466 11.8245C13.8029 14.0453 12.9652 16.3795 9.23304 16.3795C8.16988 16.3795 7.30085 15.992 6.61933 15.3503C6.37316 15.4628 5.3827 15.8003 4.04116 15.2628C4.04116 15.2628 3.78012 14.4253 5.03988 12.5128C4.82345 11.7128 4.71606 10.8628 4.7111 10.0128C4.71606 9.16284 4.82345 8.31285 5.03988 7.51284C3.78012 5.61285 4.04116 4.77535 4.04116 4.77535C5.3827 4.23785 6.37316 4.57534 6.61933 4.67535C7.30085 4.03785 8.16988 3.65035 9.23304 3.65035C12.9752 3.65035 13.7987 5.98784 14.0383 8.21284C14.3307 7.86284 14.928 7.53784 15.8408 7.53784C17.1444 7.53784 18.1918 7.55034 18.5082 7.55034C18.7635 7.55034 19.0683 7.37534 18.9708 6.86284C17.692 2.86201 14.0391 -0.000488895 9.74107 -0.000488707C4.36167 -0.000488472 -6.7851e-07 4.47701 -4.37114e-07 9.99951Z" fill="#212121"/>
-            </svg>
-        </a>
-
-        <div class="social__line"></div>
-        <div class="social__text"><span>Sosial şəbəkələr</span></div>
-    </aside>
-
-
-    <div class="menu">
-        <div class="menu__block">
-            <div class="menu__close">
-                <svg width="29" height="30" viewBox="0 0 29 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M17.1568 14.5231L28.4489 3.23075C29.1837 2.49623 29.1837 1.30861 28.4489 0.574085C27.7144 -0.160437 26.5267 -0.160437 25.7922 0.574085L14.4998 11.8665L3.20781 0.574085C2.47295 -0.160437 1.28567 -0.160437 0.551149 0.574085C-0.183716 1.30861 -0.183716 2.49623 0.551149 3.23075L11.8432 14.5231L0.551149 25.8155C-0.183716 26.55 -0.183716 27.7376 0.551149 28.4721C0.917206 28.8385 1.39852 29.0226 1.87948 29.0226C2.36045 29.0226 2.84141 28.8385 3.20781 28.4721L14.4998 17.1798L25.7922 28.4721C26.1586 28.8385 26.6396 29.0226 27.1205 29.0226C27.6015 29.0226 28.0825 28.8385 28.4489 28.4721C29.1837 27.7376 29.1837 26.55 28.4489 25.8155L17.1568 14.5231Z" fill="black"/>
-                </svg>
+        </div>
+        <!--Social Media Links end-->
+        <div class="header-content">
+          <div class="header-content-box">
+            <div class="firstline">
+              <span class="color">Elgiz</span> İsmayilov
             </div>
-            <nav>
-                <ul class="menu__list">
-                    <li class="item"><a href="#about-me">HAQQIMDA</a></li>
-                    <li class="item"><a href="#experience">TƏCRÜBƏ</a></li>
-                    <li class="item"><a href="#skills">BACARIQLAR</a></li>
-                    <li class="item"><a href="#portfolio">PROEKTLƏR</a></li>
-                    <li class="item"><a href="#contacts">ƏLAQƏ</a></li>
+            <div class="secondline">
+              I'm a
+              <span
+                class="txt-rotate color"
+                data-period="1200"
+                data-rotate='[ " Front-end developer ."]'
+              ></span>
+              <span class="slash">|</span>
+            </div>
+            <div class="contact">
+              <a href="Mailto:#"
+                ><img
+                  src="images/mail.png"
+                  alt="email-pic"
+                  class="contactpic" /></a
+              ><!--Your email Id write in place of "#"-->
+              <a href="Tel:0705316407"
+                ><img
+                  src="images/call.png"
+                  alt="phone-pic"
+                  class="contactpic" /></a
+              ><!--Your telephone number Id write in place of "#"-->
+            </div>
+          </div>
+        </div>
+        <!--header image-->
+        <div class="header-image">
+          <!-- <img src="images/man.jpg" alt="logo"> -->
+        </div>
+        <!--header image end-->
+      </div>
+      <!--Header End-->
+      <!--HomePage End-->
+      <!--Main-Section End-->
+      <!--about-->
+      <div id="about">
+        <div class="color-changer">
+          <div class="color-panel">
+            <img src="images/gear.png" alt="" />
+          </div>
+          <div class="color-selector">
+            <div class="heading">Custom Colors</div>
+            <div class="colors">
+              <ul>
+                <li>
+                  <a href="#0" class="color-red" title="color-red"></a>
+                </li>
+                <li>
+                  <a href="#0" class="color-purple" title="color-purple"></a>
+                </li>
+                <li>
+                  <a href="#0" class="color-malt" title="color-malt"></a>
+                </li>
+                <li>
+                  <a href="#0" class="color-green" title="color-green"></a>
+                </li>
+                <li>
+                  <a href="#0" class="color-blue" title="color-blue"></a>
+                </li>
+                <li>
+                  <a href="#0" class="color-orange" title="color-orange"></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!--about content-->
+        <div id="about-content">
+          <div class="about-header">
+            About <span class="color">Me</span>
+            <span class="header-caption"
+              >Get to Know <span class="color"> me.</span></span
+            >
+          </div>
+          <div class="about-main">
+            <div class="about-first-paragraph wow">
+              <!--about description-->
+              <span class="about-first-line">
+                I'm creative
+                <span class="color">front-end developer</span>
+              </span>
+              <br />
+              <span class="about-second-line">
+                Hi, I'm new to frontend. Over the course of a year, I honed my
+                skills as a developer, learning to build web applications with
+                HTML, CSS, JavaScript, React, Node, MySQL, and MongoDB databases
+                while studying. I intend to improve my coding skills by
+                constantly learning and applying this knowledge</span
+              >
+              <div class="cv">
+                <a href="./CV/Elgiz_ismayilov.pdf"
+                  ><button>Download <span class="colors">CV</span></button></a
+                >
+              </div>
+            </div>
+            <!--about picture-->
+            <div class="about-img">
+              <img src="images/me.jpg" alt="Your Image" />
+            </div>
+          </div>
+        </div>
+        <!--services start-->
+        <div id="services">
+          <div class="color-changer">
+            <div class="color-panel">
+              <img src="images/gear.png" alt="" />
+            </div>
+            <div class="color-selector">
+              <div class="heading">Custom Colors</div>
+              <div class="colors">
+                <ul>
+                  <li>
+                    <a href="#0" class="color-red" title="color-red"></a>
+                  </li>
+                  <li>
+                    <a href="#0" class="color-purple" title="color-purple"></a>
+                  </li>
+                  <li>
+                    <a href="#0" class="color-malt" title="color-malt"></a>
+                  </li>
+                  <li>
+                    <a href="#0" class="color-green" title="color-green"></a>
+                  </li>
+                  <li>
+                    <a href="#0" class="color-blue" title="color-blue"></a>
+                  </li>
+                  <li>
+                    <a href="#0" class="color-orange" title="color-orange"></a>
+                  </li>
                 </ul>
-            </nav>
-
-            <div class="menu__social">
-                <a href="#">
-                    <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M10 0C4.475 0 0 4.36167 0 9.74107C0 14.0457 2.865 17.6962 6.8375 18.9832C7.3375 19.0749 7.52083 18.7734 7.52083 18.5148C7.52083 18.2835 7.5125 17.6706 7.50833 16.8585C4.72667 17.4459 4.14 15.5517 4.14 15.5517C3.685 14.4274 3.0275 14.1267 3.0275 14.1267C2.12167 13.5228 3.0975 13.5352 3.0975 13.5352C4.10167 13.603 4.62917 14.5389 4.62917 14.5389C5.52083 16.0283 6.97 15.5979 7.54167 15.3493C7.63167 14.719 7.88917 14.2903 8.175 14.0466C5.95417 13.8029 3.62 12.9652 3.62 9.23304C3.62 8.16988 4.0075 7.30085 4.64917 6.61934C4.53667 6.37317 4.19917 5.3827 4.73667 4.04116C4.73667 4.04116 5.57417 3.78012 7.48667 5.03988C8.28667 4.82345 9.13667 4.71606 9.98667 4.7111C10.8367 4.71606 11.6867 4.82345 12.4867 5.03988C14.3867 3.78012 15.2242 4.04116 15.2242 4.04116C15.7617 5.3827 15.4242 6.37317 15.3242 6.61934C15.9617 7.30085 16.3492 8.16988 16.3492 9.23304C16.3492 12.9752 14.0117 13.7987 11.7867 14.0383C12.1367 14.3307 12.4617 14.928 12.4617 15.8408C12.4617 17.1444 12.4492 18.1918 12.4492 18.5082C12.4492 18.7635 12.6242 19.0683 13.1367 18.9708C17.1375 17.692 20 14.0391 20 9.74107C20 4.36167 15.5225 0 10 0Z" fill="#212121"/>
-                    </svg>
-                </a>
-                <a href="#">
-                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M13.7495 0L6.24951 0C2.79826 0 -0.000488281 2.79875 -0.000488281 6.25L-0.000488281 13.75C-0.000488281 17.2013 2.79826 20 6.24951 20L13.7495 20C17.2008 20 19.9995 17.2013 19.9995 13.75L19.9995 6.25C19.9995 2.79875 17.2008 0 13.7495 0ZM18.1245 13.75C18.1245 16.1625 16.162 18.125 13.7495 18.125L6.24951 18.125C3.83701 18.125 1.87451 16.1625 1.87451 13.75L1.87451 6.25C1.87451 3.8375 3.83701 1.875 6.24951 1.875L13.7495 1.875C16.162 1.875 18.1245 3.8375 18.1245 6.25L18.1245 13.75Z" fill="black"/>
-                        <path d="M9.99951 5C7.23826 5 4.99951 7.23875 4.99951 10C4.99951 12.7613 7.23826 15 9.99951 15C12.7608 15 14.9995 12.7613 14.9995 10C14.9995 7.23875 12.7608 5 9.99951 5ZM9.99951 13.125C8.27701 13.125 6.87451 11.7225 6.87451 10C6.87451 8.27625 8.27701 6.875 9.99951 6.875C11.722 6.875 13.1245 8.27625 13.1245 10C13.1245 11.7225 11.722 13.125 9.99951 13.125Z" fill="black"/>
-                        <path d="M15.3745 5.29123C15.7425 5.29123 16.0408 4.99295 16.0408 4.62499C16.0408 4.25703 15.7425 3.95874 15.3745 3.95874C15.0065 3.95874 14.7083 4.25703 14.7083 4.62499C14.7083 4.99295 15.0065 5.29123 15.3745 5.29123Z" fill="black"/>
-                     </svg>  
-                </a>
-                <a href="#">
-                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M17.0698 0L2.9292 0C1.3139 0 -0.000488281 1.31439 -0.000488281 2.92969L-0.000488281 17.0703C-0.000488281 18.6856 1.3139 20 2.9292 20L8.82764 20L8.82764 12.9297L6.48389 12.9297L6.48389 9.41406L8.82764 9.41406L8.82764 7.03125C8.82764 5.09262 10.4046 3.51563 12.3433 3.51563L15.8979 3.51563L15.8979 7.03125L12.3433 7.03125L12.3433 9.41406L15.8979 9.41406L15.312 12.9297L12.3433 12.9297L12.3433 20L17.0698 20C18.6851 20 19.9995 18.6856 19.9995 17.0703L19.9995 2.92969C19.9995 1.31439 18.6851 0 17.0698 0Z" fill="black"/>
-                    </svg>  
-                </a>
+              </div>
             </div>
+          </div>
+          <!--services header-->
+          <div class="services-heading wow">
+            <span class="color">My</span> Services
+          </div>
+          <!--services header end-->
+          <!--services content-->
+          <div class="services-content">
+            <div class="service-one service wow">
+              <div class="service-img">
+                <img src="images/coding.png" alt="service-one" />
+              </div>
+              <div class="service-description">
+                <h2>Web Designing</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
+                  quibusdam possimus
+                </p>
+              </div>
+            </div>
+            <div class="service-two service wow">
+              <div class="service-img">
+                <img src="images/instagram.png" alt="service-two" />
+              </div>
+              <div class="service-description">
+                <h2>Social Media</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
+                  quibusdam possimus
+                </p>
+              </div>
+            </div>
+            <div class="service-three service wow">
+              <div class="service-img">
+                <img src="images/bulb.png" alt="service-three" />
+              </div>
+              <div class="service-description">
+                <h2>Creative Design</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
+                  quibusdam possimus
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="menu__overlay"></div>
-    </div>
+        <!--services content end-->
+        <!--services end-->
+        <div id="skills">
+          <div class="skills-header">My <span class="color"> Skills</span></div>
+          <div class="skills-content" style="text-align: center">
+            <div class="skill-html skill">
+              <div class="skill-text">
+                <div class="html">HTML/CSS</div>
+              </div>
+              <div class="html-prog wow prog">
+                <div class="html-progress wow">95%</div>
+              </div>
+            </div>
+            <div class="skill-html skill">
+              <div class="skill-text">
+                <div class="html">Javascript</div>
+              </div>
+              <div class="html-prog wow prog">
+                <div class="js-progress wow">90%</div>
+              </div>
+            </div>
+            <div class="skill-html skill">
+              <div class="skill-text">
+                <div class="html">Next.js</div>
+              </div>
+              <div class="html-prog wow prog">
+                <div class="adobe-progress wow">80%</div>
+              </div>
+            </div>
+            <div class="skill-html skill">
+              <div class="skill-text">
+                <div class="html">React.js</div>
+              </div>
+              <div class="html-prog wow prog">
+                <div class="php-progress wow">85%</div>
+              </div>
+            </div>
+            <div class="skill-html skill">
+              <div class="skill-text">
+                <div class="html">JQuery</div>
+              </div>
+              <div class="html-prog wow prog">
+                <div class="jquery-progress wow">80%</div>
+              </div>
+            </div>
+            <div class="skill-html skill">
+              <div class="skill-text">
+                <div class="html">SEO</div>
+              </div>
+              <div class="html-prog wow prog">
+                <div class="seo-progress wow">75%</div>
+              </div>
+            </div>
+            <div class="skill-html skill">
+                <div class="skill-text">
+                  <div class="html">Webpack</div>
+                </div>
+                <div class="html-prog wow prog">
+                  <div class="html-progress wow">80%</div>
+                </div>
+              </div>
 
-    <section class="promo">
-        <div class="hamburger animate__fadeInRight animate__animated">
-            <span></span>
-            <span class="long"></span>
-            <span></span>
+              <div class="skill-html skill">
+                <div class="skill-text">
+                  <div class="html">SCSS</div>
+                </div>
+                <div class="html-prog wow prog">
+                  <div class="html-progress wow">90%</div>
+                </div>
+              </div>
+
+              <div class="skill-html skill">
+                <div class="skill-text">
+                  <div class="html">Redux</div>
+                </div>
+                <div class="html-prog wow prog">
+                  <div class="html-progress wow">70%</div>
+                </div>
+              </div>
+
+              <div class="skill-html skill">
+                <div class="skill-text">
+                  <div class="html">Typescript</div>
+                </div>
+                <div class="html-prog wow prog">
+                  <div class="html-progress wow">75%</div>
+                </div>
+              </div>
+
+              <div class="skill-html skill">
+                <div class="skill-text">
+                  <div class="html">Figma</div>
+                </div>
+                <div class="html-prog wow prog">
+                  <div class="html-progress wow">80%</div>
+                </div>
+              </div>
+
+              <div class="skill-html skill">
+                <div class="skill-text">
+                  <div class="html">Node.js</div>
+                </div>
+                <div class="html-prog wow prog">
+                  <div class="html-progress wow">65%</div>
+                </div>
+              </div>
+
+              
+              <div class="skill-html skill">
+                <div class="skill-text">
+                  <div class="html">MongoDB</div>
+                </div>
+                <div class="html-prog wow prog">
+                  <div class="html-progress wow">60%</div>
+                </div>
+              </div>
+
+              <div class="skill-html skill">
+                <div class="skill-text">
+                  <div class="html">Firebase</div>
+                </div>
+                <div class="html-prog wow prog">
+                  <div class="html-progress wow">70%</div>
+                </div>
+              </div>
+
+
+          </div>
         </div>
-        <div class="container animate__fadeInLeft animate__animated">
-            <h1 class="title title_fz16 title_round">İsmayılov Elgiz</h1>
-            <div class="title title_fz48 promo__title">Frontend Developer </div>
-            <div class="promo__btns">
-                <a href="#portfolio" class="promo__btn orange-btn">Portfolio</a>
-                <a href="#about-me" class="promo__btn">Haqqımda</a>
-                <a href="./cv/İsmayilov_Elgiz.pdf" target="_blank" class="promo__btn">Cv</a>
-            </div>
+        <!--copyright-section You Can Remove After Downloading-->
+        <div class="footer">
+          <div class="footer-text">
+            <img
+              src="./images/copyright.png"
+              alt="copyright-img"
+              class="images"
+              height="14px"
+            />
+            Elgiz İsmayilov
+          </div>
         </div>
-    </section>
-
-
-    <section id="about-me" class="about-me">
-        <div class="container">
-            <div class="about-me__wrapper">
-                <div class="about-me__img">
-                    <picture>
-                        <source  type="image/webp" srcset="./img/V_xPXUJnRAtRLw__876008__IMG_7408.png">
-                        <img loading="lazy" src="./img/V_xPXUJnRAtRLw__876008__IMG_7408.png" alt="main_photo" class="contacts__img">
-                    </picture>
-                </div>
-                <div class="about-me__info">
-                    <h2 class="title title_fz16 title_round">Haqqımda</h2>
-                    <div class="title title_fz36"></div>
-                    <div class="line line_left"></div>
-                    <div class="about-me__text">Salam mənim adım İsmayılov Elgizdir və mən yeniyəm frontenddə . Bir il ərzində mən developer  kimi bacarıqlarımı inkişaf etdirdim, oxuyarkən HTML, CSS, JavaScript, React, Node, MySQL və MongoDB verilənlər bazası ilə web-tədbiqləri qurmağı öyrəndim. Kodlaşdırma bacarıqlarımı məhz daimi öyrənməklə və həmin bilikləri tədbiq etməklə inkişaf etməyimə inanıram</div>
-                    <div class="about-me__skills">
-                        <div class="about-me__skill">
-                            <div class="round">
-                                <img loading="lazy" src="./icons/about_me/web_development.svg" alt="" class="try">
-                            </div>
-                            <div class="skill-content">
-                                <div class="title title_fz14">Web-developer</div>
-                                <!-- <div class="skill-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div> -->
-                            </div>
-                        </div>
-                        <div class="about-me__skill">
-                           <div class="round">
-                                <img loading="lazy" src="./icons/about_me/mobile_dev.svg" alt="" class="skill">
-                            </div>
-                            <div class="skill-content">
-                                <div class="title title_fz14">Web-App-Developer</div>
-                                <!-- <div class="skill-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div> -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <!--copyright-section-->
+      </div>
+      <!--about end-->
+      <!--portfolio-->
+      <div id="portfolio">
+        <div class="color-changer">
+          <div class="color-panel">
+            <img src="images/gear.png" alt="" />
+          </div>
+          <div class="color-selector">
+            <div class="heading">Custom Colors</div>
+            <div class="colors">
+              <ul>
+                <li>
+                  <a href="#0" class="color-red" title="color-red"></a>
+                </li>
+                <li>
+                  <a href="#0" class="color-purple" title="color-purple"></a>
+                </li>
+                <li>
+                  <a href="#0" class="color-malt" title="color-malt"></a>
+                </li>
+                <li>
+                  <a href="#0" class="color-green" title="color-green"></a>
+                </li>
+                <li>
+                  <a href="#0" class="color-blue" title="color-blue"></a>
+                </li>
+                <li>
+                  <a href="#0" class="color-orange" title="color-orange"></a>
+                </li>
+              </ul>
             </div>
+          </div>
         </div>
-    </section>
-
-    <section id="experience" class="experience">
-        <div class="container">
-            <h2 class="title title_fz16 title_section-title">Biliklər</h2>
-            <!-- <div class="title title_fz36 title_section-subtitle">Чем я буду полезна</div> -->
-            <div class="line"></div>
-
-            <div class="experience__wrapper">
-                
-                <div class="experience__column" data-aos="fade-left"
-                data-aos-duration="500">
-                    <h3 class="title title_fz20">Təhsil</h3>
-
-                    <ul class="experience__list">
-                        <li class="experience__list-item" >
-                            <div class="experience__list-item__header">
-                                <div class="round">
-                                    <img loading="lazy" src="./icons/experience/university.svg" alt="university">
-                                </div>
-                                <h4 class="title title_fz14">ADAU - İnformasiya texnologiyaları</h4>
-                                <div class="title title_fz12">Fərqlənmə diplomu | Bakalavr(2018-2022)</div>
-                            </div>
-                        </li>
-                        </li>
-                    </ul>
-                </div>
-                <div class="experience__column" data-aos="fade-right" data-aos-duration="500">
-                    <h3 class="title title_fz20">Kurslar</h3>
-                    <ul class="experience__list">
-                        <li class="experience__list-item">
-                            <div class="experience__list-item__header">
-                                <div class="round">
-                                    <img loading="lazy" src="./icons/experience/courses.svg" alt="courses">
-                                </div>
-                                <h4 class="title title_fz14">Udemy</h4>
-                                <div class="title title_fz12">WEB-разработчик 2022                                
-                                </div>
-                            </div>
-
-                            <li class="experience__list-item">
-                                <div class="experience__list-item__header">
-                                    <div class="round">
-                                        <img loading="lazy" src="./icons/experience/courses.svg" alt="courses">
-                                    </div>
-                                    <h4 class="title title_fz14">Udemy</h4>
-                                    <div class="title title_fz12">Node JS. Практический курс. (Mongo, GraphQL, MySQL, Express)                                    </div>
-                                </div>
-                            </li>
-
-                            <li class="experience__list-item">
-                                <div class="experience__list-item__header">
-                                    <div class="round">
-                                        <img loading="lazy" src="./icons/experience/courses.svg" alt="courses">
-                                    </div>
-                                    <h4 class="title title_fz14">Udemy</h4>
-                                    <div class="title title_fz12">Полный курс по JavaScript + React - с нуля до результата
-                                        </div>
-                                </div>
-                            </li>
-                        </li>
-                    </ul>
-
-        <!--             <li class="experience__list-item">
-                        <div class="experience__list-item__header">
-                            <div class="round">
-                                <img loading="lazy" src="./icons/experience/developer.svg" alt="developer">
-                            </div>
-                            <h4 class="title title_fz14">Front-End Developer</h4>
-                            <div class="title title_fz12">EPAM | Москва (2018-2019) </div>
-                        </div>
-                        <div class="experience__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmo. </div>
-                    </li>
-
-                    <li class="experience__list-item">
-                        <div class="experience__list-item__header">
-                            <div class="round">
-                                <img loading="lazy" src="./icons/experience/designer.svg" alt="designer">
-                            </div>
-                            <h4 class="title title_fz14">UI/UX Designer</h4>
-                            <div class="title title_fz12">Squad Team | Москва (2018)</div>
-                        </div>
-                        <div class="experience__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmo. </div>
-                    </li> -->
-                </div>
-            </div>
+        <div class="portfolio-header">
+          <span class="color"> My </span> Portfolio
+          <span class="header-caption">
+            Some Of My <span class="color"> Works</span></span
+          >
         </div>
-    </section>
-
-
-    <section id="skills" class="skills">
-        <div class="container">
-            <h2 class="title title_fz16 title_section-title ">Bacarıqlar</h2>
-            <div class="title title_fz36 title_section-subtitle skills__title">İstifadə etdiyim alətlər</div>
-            <div class="line"></div>
-
-            <div class="skills__wrapper" >
-                <div class="skills__item" data-aos="zoom-in" data-aos-duration="500">
-                    <img loading="lazy" src="./icons/skills/html5.svg" alt="html">
-                    <h3 class="skills__item-title">HTML5</h3>
-                    <div class="skills__item-text">
-                        Saytınızın və ya tətbiqinizin çərçivəsini yaradır  və beşinci versiya  məhsulunuzun daha SEO-optimallaşdırılmış strukturunu yaratmağa imkan verəcəkdir.</div>
-                </div>
-                <div class="skills__item" data-aos="zoom-in" data-aos-duration="500">
-                    <img loading="lazy" src="./icons/skills/css3.svg" alt="css3">
-                    <h3 class="skills__item-title">CSS3</h3>
-                    <div class="skills__item-text">Bu stil dili  saytınız və ya tətbiqiniz üçün tamamilə istənilən görünüş yaratmağa imkan verir. Hər şey yalnız sizin təsəvvürünüzlə məhdudlaşır!</div>
-                </div>
-                <div class="skills__item" data-aos="zoom-in" data-aos-duration="500">
-                    <img loading="lazy" src="./icons/skills/js.svg" alt="js">
-                    <h3 class="skills__item-title">Java Script</h3>
-                    <div class="skills__item-text">Bu proqramlaşdırma dili sizə hər şeyi həyata keçirməyə imkan verir: slayderlər, modal pəncərələr,  serverdən məlumatların qəbulu və s.</div>
-                </div>
-                <div class="skills__item" data-aos="zoom-in" data-aos-duration="500">
-                    <img loading="lazy" src="./icons/skills/jquery.svg" alt="jquery">
-                    <h3 class="skills__item-title">Jquery</h3>
-                    <div class="skills__item-text">JQuery kitabxanası inkişafı sürətləndirəcək. Onu layihəyə inteqrasiya etməyə ehtiyac olmadan, edilməycək, lakin onunla işləmək bacarığı mövcuddur</div>
-                </div>
-                <div class="skills__item" data-aos="zoom-in" data-aos-duration="500">
-                    <img loading="lazy" src="./icons/skills/react.svg" alt="react">
-                    <h3 class="skills__item-title">React</h3>
-                    <div class="skills__item-text">Bu kitabxana sizə veb application yaratmağa imkan verir. Məqsədləriniz üçün ən interaktiv məhsulu yarada bilərik</div>
-                </div>
-                <div class="skills__item" data-aos="zoom-in" data-aos-duration="500">
-                    <img loading="lazy" src="./icons/skills/node.js.svg" alt="node">
-                    <h3 class="skills__item-title">Node.js</h3>
-                    <div class="skills__item-text">
-                        Bu platforma məhsulunuz üçün istifadəçinin görmədiyi hərəkətləri yerinə yetirəcək “beyini” yaratmağa imkan verir.</div>
-                </div>
-                <div class="skills__item" data-aos="zoom-in" data-aos-duration="500">
-                    <img loading="lazy" src="./icons/skills/picsvg_download.svg" alt="mongo">
-                    <h3 class="skills__item-title">Typescript</h3>
-                    <div class="skills__item-text">TypeScript sizə istənilən miqyasda ən yaxşı alətləri təqdim edən güclü şəkildə yazılmış JavaScript əsaslı proqramlaşdırma dilidir.</div>
-                </div>
-
-                <div class="skills__item" data-aos="zoom-in" data-aos-duration="500">
-                    <img loading="lazy" src="./icons/skills/redux.svg" alt="mongo">
-                    <h3 class="skills__item-title">Redux</h3>
-                    <div class="skills__item-text">Proqram vəziyyətini idarə etmək üçün açıq mənbəli JavaScript kitabxanası</div>
-                </div>
+        <div id="portfolio-content">
+          <div class="portfolio portfolio-first">
+            <div class="portfolio-image">
+              <img src="images/project_1.webp" alt="portfolio-first" />
             </div>
-        </div>
-
-        <div class="progress">
-            <div class="container ">
-                <div class="progress__wrapper">
-                    <div class="progress-item">
-                        <h3 class="title title_fz14 progress-title">Saytların yaradılması</h3>
-                        <div class="progress-procents">80%</div>
-                        <div class="progress-indicator">
-                            <span></span>
-                        </div>
-                    </div>
-                    <div class="progress-item">
-                        <h3 class="title title_fz14 progress-title">Tədbiqlərin yaradılması</h3>
-                        <div class="progress-procents">80%</div>
-                        <div class="progress-indicator">
-                            <span></span>
-                        </div>
-                    </div>
-                    <div class="progress-item">
-                        <h3 class="title title_fz14 progress-title">Məlumatlarla iş</h3>
-                        <div class="progress-procents">70%</div>
-                        <div class="progress-indicator">
-                            <span></span>
-                        </div>
-                    </div>
-                    <div class="progress-item">
-                        <h3 class="title title_fz14 progress-title">Hard skills</h3>
-                        <div class="progress-procents">85%</div>
-                        <div class="progress-indicator">
-                            <span></span>
-                        </div>
-                    </div>
-                </div>
+            <div class="portfolio-text">
+              <h2>MyMarvel</h2>
+              <p>
+                React , Marvel Api , HTML , CSS
+              </p>
+              <div class="button">
+                <a href="https://leafy-cuchufli-499279.netlify.app/"
+                  ><button>
+                    <span class="index">
+                      View Project<i class="gg-arrow-right"></i
+                    ></span></button
+                ></a>
+              </div>
             </div>
-        </div>
-    </section>
-
-
-    <section id="portfolio" class="portfolio">
-        <div class="container">
-            <h2  class="title title_fz16 title_section-title">Portfolio</h2>
-            <div class="title title_fz36 title_section-subtitle">Proektlər</div>
-            <div class="line"></div>
-
-            <div class="title title_fz36 title_section-subtitle">Frontend</div>
-            <div class="portfolio__wrapper" data-aos="zoom-in" data-aos-duration="800">
-                <a href="https://joyful-semolina-d4f7e7.netlify.app" target="_blank" class="portfolio-item" ><img loading="lazy" src="./img/works/myMovie.png" alt="project"></a>
-                <a href="https://elgiz20002000.github.io/tic_tac_toe/src/" target="_blank" class="portfolio-item"><img loading="lazy" src="./img/works/project_2.webp" alt="project"></a>
-                <a href="https://elgiz20002000.github.io/todo_list/src/" target="_blank" class="portfolio-item"><img loading="lazy" src="./img/works/project_3.webp" alt="project"></a>
-                <a href="https://elgiz20002000.github.io/calculator/src/" target="_blank" class="portfolio-item " ><img loading="lazy" src="./img//works/project_4.webp" alt="project"></a>
-                <a href="https://elgiz20002000.github.io/elgiz20002000/src/" target="_blank" class="portfolio-item"><img loading="lazy" src="./img/works/project_5.webp" alt="project"></a>
-                <a href="https://elgiz20002000.github.io/Project_2/src/" target="_blank" class="portfolio-item" ><img loading="lazy" src="./img/works/project_6.webp" alt="project"></a>
-                <a href="https://elgiz20002000.github.io/food/src/" target="_blank" class="portfolio-item" ><img loading="lazy" src="./img/works/project_11.webp" alt="project"></a>
-            
-
+          </div>
+          <div class="portfolio portfolio-second">
+            <div class="portfolio-image">
+              <img src="images/myMovie.png" alt="portfolio-second" />
             </div>
-
-            
-
-            <div class="title title_fz36 title_section-subtitle">React</div>
-
-            <div class="portfolio__wrapper" data-aos="zoom-in" data-aos-duration="800">
-                <a href="https://leafy-cuchufli-499279.netlify.app/" target="_blank" class="portfolio-item"><img loading="lazy" src="./img//works/project_1.webp" alt="project"></a>
-                <a href="https://tubular-licorice-0ea805.netlify.app/" target="_blank" class="portfolio-item" ><img loading="lazy" src="./img/works/project_7.webp" alt="project"></a>
-                <a href="https://amazing-sprinkles-fbc874.netlify.app" target="_blank" class="portfolio-item " ><img loading="lazy" src="./img/works/project_10.webp" alt="project"></a>
-
+            <div class="portfolio-text">
+              <h2>MyMovie</h2>
+              <p>
+                JS , HTML , SCSS , WEBPACK , Node.js , Firebase , Imdb Api
+              </p>
+              <div class="button">
+                <a href="https://joyful-semolina-d4f7e7.netlify.app"
+                  ><button>
+                    <span class="index">
+                      View Project<i class="gg-arrow-right"></i
+                    ></span></button
+                ></a>
+              </div>
             </div>
+          </div>
 
-            <div class="title title_fz36 title_section-subtitle">React(Convert Api)</div>
-            <div class="portfolio__wrapper" data-aos="zoom-in" data-aos-duration="800">
-                <a href="https://dancing-moxie-e0c755.netlify.app" target="_blank" class="portfolio-item" ><img loading="lazy" src="./img/works/project_9.webp" alt="project"></a>
+          <div class="portfolio portfolio-fourth">
+            <div class="portfolio-image">
+              <img src="images/project_2.webp" alt="portfolio-fourth" />
             </div>
-
-            <div class="title title_fz36 title_section-subtitle">React + Redux(Redux-Thunk)</div>
-            <div class="portfolio__wrapper" data-aos="zoom-in" data-aos-duration="800">
-                <a href="https://github.com/elgiz20002000/hero-admin-panel" target="_blank" class="portfolio-item " ><img loading="lazy" src="./img/works/heroe_admin.png" alt="project"></a>
+            <div class="portfolio-text">
+              <h2>Tic-tac-toe game</h2>
+              <p>
+               JS , HTML , SCSS
+              </p>
+              <div class="button">
+                <a href="https://elgiz20002000.github.io/tic_tac_toe/src/"
+                  ><button>
+                    <span class="index">
+                      View Project<i class="gg-arrow-right"></i
+                    ></span></button
+                ></a>
+              </div>
             </div>
+          </div>
 
-            <div class="title title_fz36 title_section-subtitle">React + TypeScript</div>
-            <div class="portfolio__wrapper" data-aos="zoom-in" data-aos-duration="800">
-                <a href="https://633fdf6bf692d719b642e88e--lively-brioche-376c78.netlify.app/" target="_blank" class="portfolio-item " ><img loading="lazy" src="./img/works/screencapture-localhost-3000-2022-10-07-12_12_35.png" alt="project"></a>
+
+          <div class="portfolio portfolio-first">
+            <div class="portfolio-image">
+              <img src="images/project_3.webp" alt="portfolio-fourth" />
             </div>
+            <div class="portfolio-text">
+              <h2>Todo list</h2>
+              <p>
+               JS , HTML , SCSS
+              </p>
+              <div class="button">
+                <a href="https://elgiz20002000.github.io/todo_list/src/"
+                  ><button>
+                    <span class="index">
+                      View Project<i class="gg-arrow-right"></i
+                    ></span></button
+                ></a>
+              </div>
+            </div>
+          </div>
 
-        </div>
-    </section>
+          <div class="portfolio portfolio-first">
+            <div class="portfolio-image">
+              <img src="images/project_4.webp" alt="portfolio-fourth" />
+            </div>
+            <div class="portfolio-text">
+              <h2>Calculator</h2>
+              <p>
+               JS , HTML , SCSS
+              </p>
+              <div class="button">
+                <a href="https://elgiz20002000.github.io/calculator/src/"
+                  ><button>
+                    <span class="index">
+                      View Project<i class="gg-arrow-right"></i
+                    ></span></button
+                ></a>
+              </div>
+            </div>
+          </div>
 
-    <section id="contacts" class="contacts">
-        <div class="container">
-                    <h2 class="title title_fz16  title_section-title">Əlaqə</h2>
-                    <div class="title title_fz36 title_section-subtitle ">Mənimlə əlaqə saxlayın</div>
-                    <div class="line"></div>
-                    <div class="contacts__text title title_fz14">Sizin üçün əlverişli olan istənilən şəkildə:</div>
-                    <div class="contacts__social">
-                        <a href="" class="contacts-link">
-                            <svg width="30" height="30" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M17.0698 0L2.9292 0C1.3139 0 -0.000488281 1.31439 -0.000488281 2.92969L-0.000488281 17.0703C-0.000488281 18.6856 1.3139 20 2.9292 20L8.82764 20L8.82764 12.9297L6.48389 12.9297L6.48389 9.41406L8.82764 9.41406L8.82764 7.03125C8.82764 5.09262 10.4046 3.51563 12.3433 3.51563L15.8979 3.51563L15.8979 7.03125L12.3433 7.03125L12.3433 9.41406L15.8979 9.41406L15.312 12.9297L12.3433 12.9297L12.3433 20L17.0698 20C18.6851 20 19.9995 18.6856 19.9995 17.0703L19.9995 2.92969C19.9995 1.31439 18.6851 0 17.0698 0Z" fill="black"/>
-                            </svg>  
-                        </a>
-                        <a href="" class="contacts-link">
-                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M15 30C23.2863 30 30 23.2863 30 15C30 6.71375 23.2863 0 15 0C6.71375 0 0 6.71375 0 15C0 23.2863 6.71375 30 15 30ZM6.86375 14.675L21.3263 9.09875C21.9975 8.85625 22.5837 9.2625 22.3662 10.2775L22.3675 10.2762L19.905 21.8775C19.7225 22.7 19.2337 22.9 18.55 22.5125L14.8 19.7487L12.9912 21.4913C12.7912 21.6913 12.6225 21.86 12.235 21.86L12.5013 18.0438L19.4513 11.765C19.7537 11.4987 19.3837 11.3488 18.985 11.6138L10.3963 17.0212L6.69375 15.8663C5.89 15.6112 5.8725 15.0625 6.86375 14.675Z" fill="black"/>
-                                </svg>
-                                
-                        </a>
-                        <a href="" class="contacts-link">
-                            <svg width="30" height="30" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M13.7495 0L6.24951 0C2.79826 0 -0.000488281 2.79875 -0.000488281 6.25L-0.000488281 13.75C-0.000488281 17.2013 2.79826 20 6.24951 20L13.7495 20C17.2008 20 19.9995 17.2013 19.9995 13.75L19.9995 6.25C19.9995 2.79875 17.2008 0 13.7495 0ZM18.1245 13.75C18.1245 16.1625 16.162 18.125 13.7495 18.125L6.24951 18.125C3.83701 18.125 1.87451 16.1625 1.87451 13.75L1.87451 6.25C1.87451 3.8375 3.83701 1.875 6.24951 1.875L13.7495 1.875C16.162 1.875 18.1245 3.8375 18.1245 6.25L18.1245 13.75Z" fill="black"/>
-                                <path d="M9.99951 5C7.23826 5 4.99951 7.23875 4.99951 10C4.99951 12.7613 7.23826 15 9.99951 15C12.7608 15 14.9995 12.7613 14.9995 10C14.9995 7.23875 12.7608 5 9.99951 5ZM9.99951 13.125C8.27701 13.125 6.87451 11.7225 6.87451 10C6.87451 8.27625 8.27701 6.875 9.99951 6.875C11.722 6.875 13.1245 8.27625 13.1245 10C13.1245 11.7225 11.722 13.125 9.99951 13.125Z" fill="black"/>
-                                <path d="M15.3745 5.29123C15.7425 5.29123 16.0408 4.99295 16.0408 4.62499C16.0408 4.25703 15.7425 3.95874 15.3745 3.95874C15.0065 3.95874 14.7083 4.25703 14.7083 4.62499C14.7083 4.99295 15.0065 5.29123 15.3745 5.29123Z" fill="black"/>
-                             </svg>  
-                        </a>
-                    </div>
+          <div class="portfolio portfolio-first">
+            <div class="portfolio-image">
+              <img src="images/project_5.webp" alt="portfolio-fourth" />
+            </div>
+            <div class="portfolio-text">
+              <h2>Uber clone</h2>
+              <p>
+               JS , HTML , CSS , Bootstrap
+              </p>
+              <div class="button">
+                <a href="https://elgiz20002000.github.io/elgiz20002000/src/"
+                  ><button>
+                    <span class="index">
+                      View Project<i class="gg-arrow-right"></i
+                    ></span></button
+                ></a>
+              </div>
+            </div>
+          </div>
 
-                        <div class="contacts__text title title_fz14">
-                            Və ya təfərrüatlarınızı göndərin, mən sizə özüm yazacam:</div>
-                        <form action="#" class="contacts__form">
-                            <div class="contacts__input first">
-                                <input required name="name" id="name" type="text">
-                                <label for="name">Ad</label>
-                            </div>
-                            <div class="contacts__input second">
-                                <input required name="email" id="email" type="email">
-                                <label for="email">Email</label>
-                            </div>
-                            <div class="contacts__textarea ">
-                                <textarea name="text" id="text" cols="30" rows="10"></textarea>
-                                <label for="text">Məktub</label>
-                            </div>
-                           
-                            <div class="contacts__btn">
-                                <button class="orange-btn">Göndər</button> 
-                              <!--   <div class="contacts__privacy">
-                                    <input required type="checkbox" name="policy">
-                                    <span>  Mən razıyam <a href="./privacy.html">политикой конфиденциальности</a></span>
-                                </div> -->
-                            </div>
-                        </form>
-        </div>
-    </section>
+          <div class="portfolio portfolio-first">
+            <div class="portfolio-image">
+              <img src="images/project_6.webp" alt="portfolio-fourth" />
+            </div>
+            <div class="portfolio-text">
+              <h2>Pulse </h2>
+              <p>
+               JS , HTML , CSS , Bootstrap
+              </p>
+              <div class="button">
+                <a href="https://elgiz20002000.github.io/Project_2/src/"
+                  ><button>
+                    <span class="index">
+                      View Project<i class="gg-arrow-right"></i
+                    ></span></button
+                ></a>
+              </div>
+            </div>
+          </div>
     
+          <div class="portfolio portfolio-first">
+            <div class="portfolio-image">
+              <img src="images/project_7.webp" alt="portfolio-fourth" />
+            </div>
+            <div class="portfolio-text">
+              <h2>Coffe shop </h2>
+              <p>
+               React , HTML , SCSS , React router
+              </p>
+              <div class="button">
+                <a href="https://tubular-licorice-0ea805.netlify.app/"
+                  ><button>
+                    <span class="index">
+                      View Project<i class="gg-arrow-right"></i
+                    ></span></button
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="portfolio">
+          <div class="portfolio-image">
+            <img src="images/project_8.webp" alt="portfolio-fourth" />
+          </div>
+          <div class="portfolio-text">
+            <h2>Course site </h2>
+            <p>
+             Node.js , HTML , CSS , JS , Materialize 
+            </p>
+            <div class="button">
+              <a href="https://tubular-licorice-0ea805.netlify.app/"
+                ><button>
+                  <span class="index">
+                    View Project<i class="gg-arrow-right"></i
+                  ></span></button
+              ></a>
+            </div>
+          </div>
+        </div>
 
-    <script src="js/script.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-</body>
+        <div class="portfolio">
+          <div class="portfolio-image">
+            <img src="images/project_9.webp" alt="portfolio-fourth" />
+          </div>
+          <div class="portfolio-text">
+            <h2>Currency converter (with api) </h2>
+            <p>
+             React.js , HTML , SCSS  
+            </p>
+            <div class="button">
+              <a href="https://tubular-licorice-0ea805.netlify.app/"
+                ><button>
+                  <span class="index">
+                    View Project<i class="gg-arrow-right"></i
+                  ></span></button
+              ></a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="portfolio">
+          <div class="portfolio-image">
+            <img src="images/project_10.webp" alt="portfolio-fourth" />
+          </div>
+          <div class="portfolio-text">
+            <h2>Employees list </h2>
+            <p>
+             React.js , HTML , CSS  
+            </p>
+            <div class="button">
+              <a href="https://amazing-sprinkles-fbc874.netlify.app"
+                ><button>
+                  <span class="index">
+                    View Project<i class="gg-arrow-right"></i
+                  ></span></button
+              ></a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="portfolio">
+            <div class="portfolio-image">
+              <img src="images/project_11.webp" alt="portfolio-fourth" />
+            </div>
+            <div class="portfolio-text">
+              <h2>Food site </h2>
+              <p>
+              React.js , HTML , CSS  
+              </p>
+              <div class="button">
+                <a href="https://elgiz20002000.github.io/food/src/"
+                  ><button>
+                    <span class="index">
+                      View Project<i class="gg-arrow-right"></i
+                    ></span></button
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio portfolio-first">
+            <div class="portfolio-image">
+              <img src="images/meladora.png" alt="portfolio-first" />
+            </div>
+            <div class="portfolio-text">
+              <h2>Meladora</h2>
+              <p>
+                JS , JQuery , HTML , SCSS , Slick
+              </p>
+              <div class="button">
+                <a href="https://elaborate-youtiao-527d9e.netlify.app/"
+                  ><button>
+                    <span class="index">
+                      View Project<i class="gg-arrow-right"></i
+                    ></span></button
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio portfolio-first">
+            <div class="portfolio-image">
+              <img src="images/aztur.png" alt="portfolio-first" />
+            </div>
+            <div class="portfolio-text">
+              <h2>AzTur</h2>
+              <p>
+                JS , JQuery , HTML , SCSS , Slick
+              </p>
+              <div class="button">
+                <a href="https://effervescent-sawine-1c7065.netlify.app/"
+                  ><button>
+                    <span class="index">
+                      View Project<i class="gg-arrow-right"></i
+                    ></span></button
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio portfolio-first">
+            <div class="portfolio-image">
+              <img src="images/locky.png" alt="portfolio-first" />
+            </div>
+            <div class="portfolio-text">
+              <h2>Locky office</h2>
+              <p>
+                JS , JQuery , HTML , SCSS , Slick
+              </p>
+              <div class="button">
+                <a href="https://peppy-lebkuchen-06dd34.netlify.app/"
+                  ><button>
+                    <span class="index">
+                      View Project<i class="gg-arrow-right"></i
+                    ></span></button
+                ></a>
+              </div>
+            </div>
+          </div>
+      </div>
+</div>
+
+
+        <!--copyright-section You Can Remove After Downloading-->
+        <div class="footer">
+          <div class="footer-text">
+            <img
+              src="./images/copyright.png"
+              alt="copyright-img"
+              class="images"
+              height="14px"
+            />
+            Elgiz İsmayilov
+          </div>
+        </div>
+        <!--copyright-section-->
+      </div>
+      <!--portfolio end-->
+      <!--blog-->
+      <!-- <div id="blog">
+            <div class="color-changer">
+                <div class="color-panel">
+                    <img src="images/gear.png" alt="">
+                </div>
+                <div class="color-selector">
+                    <div class="heading">Custom Colors</div>
+                    <div class="colors">
+                        <ul >
+                        <li>
+                            <a href="#0" class="color-red " title="color-red"></a>
+                        </li>
+                        <li>
+                            <a href="#0" class="color-purple" title="color-purple"></a>
+                        </li>
+                        <li>
+                            <a href="#0" class="color-malt" title="color-malt"></a>
+                        </li>
+                        <li>
+                            <a href="#0" class="color-green" title="color-green"></a>
+                        </li>
+                        <li>
+                            <a href="#0" class="color-blue" title="color-blue"></a>
+                        </li>
+                        <li>
+                            <a href="#0" class="color-orange" title="color-orange"></a>
+                        </li>
+                        </ul>
+                    </div>
+                </div>
+                </div>
+        <div class="blog-header"> Blogs</span>
+            <span class ="header-caption"> My Latest <span class="color"> blog posts.</span></span></div>
+            <div class="blog-content">
+                 <div class="blogs">
+                     <a href="#">
+                     <div class="img">
+                         <img src="images/post-one.jpg" alt="blog-one">
+                        <div class="blog-date">8 May,20</div>
+                     </div>
+                     <div class="blog-text">
+                         <h3>Harleys In Hawaai</h3>
+                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus alias dolore recusandae illum, corrupti quo 
+                             veniam saepe aliquid! Quis voluptates ratione consequuntur vel, perferendis cum provident? Magnam fugiat voluptas
+                              libero.</p>
+                     </div></a>
+                 </div>      
+                 <div class="blogs">
+                    <a href="#">
+                    <div class="img">
+                        <img src="images/post-two.jpg" alt="blog-two">
+                        <div class="blog-date">16 Jan,20</div>
+                    </div>
+                    <div class="blog-text">
+                        <h3>Key To Be Productive</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt maiores, 
+                            recusandae cupiditate ducimus a non tempora, architecto obcaecati eaque ipsum assumenda harum dolorum iusto tenetur
+                             eius eligendi dolor magnam sit!</p>
+                    </div></a>
+                </div>      
+                <div class="blogs">
+                    <a href="#">
+                    <div class="img">
+                        <img src="images/post-three.jpg" alt="blog-three">
+                        <div class="blog-date">30 Nov,19</div>
+                    </div>
+                    <div class="blog-text">
+                        <h3>Caffeine Addict</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo nostrum impedit 
+                            ipsam perspiciatis ratione sapiente quasi optio reprehenderit, labore consequuntur suscipit cum quas.
+                             Officiis dolorem asperiores, ut necessitatibus quas doloremque?</p>
+                    </div></a>
+                </div>
+                <div class="blogs">
+                    <a href="#">
+                    <div class="img">
+                        <img src="images/post-four.jpg" alt="blog-four">
+                        <div class="blog-date">6 Jul,19</div>
+                    </div>
+                    <div class="blog-text">
+                        <h3>Web Development</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, veniam ratione quam vitae,
+                             quibusdam explicabo rem debitis velit ipsa repellat, impedit nulla fuga? Amet corporis praesentium quae.
+                              Sed, quibusdam necessitatibus.</p>
+                    </div></a>
+                </div>  
+                <div class="blogs">
+                    <a href="#">
+                    <div class="img">
+                        <img src="images/post-five.jpg" alt="blog-five">
+                        <div class="blog-date">1 Jun,19</div>
+                    </div>
+                    <div class="blog-text">
+                        <h3>Work From Home</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga sunt eum necessitatibus rem 
+                            dignissimos nulla mollitia cumque, provident officiis non vitae? Animi aut doloremque illum, soluta hic minus 
+                            sint explicabo..</p>
+                    </div></a>
+                </div>  
+                <div class="blogs">
+                    <a href="#">
+                    <div class="img">
+                        <img src="images/post-six.jpg" alt="blog-six">
+                        <div class="blog-date">28 Feb,19</div>
+                    </div>
+                    <div class="blog-text">
+                        <h3>Business Trip</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo tempora dolorum fuga ratione, unde, 
+                            ex quaerat iste numquam nemo nihil nobis rem sint quia recusandae dignissimos quos ut rerum nam.</p>
+                    </div></a>
+                </div>        
+            </div> -->
+      <!--copyright-section You Can Remove After Downloading-->
+      <!-- <div class="footer">
+                <div class="footer-text">
+                    <img src="./images/copyright.png" alt="copyright-img" class="images" height="14px"> Elgiz İsmayilovs
+                </div>
+               </div> -->
+      <!--copyright-section-->
+      <!-- </div> -->
+      <!--blog end-->
+      <!--contact-->
+      <div id="contact">
+        <div class="color-changer">
+          <div class="color-panel">
+            <img src="images/gear.png" alt="" />
+          </div>
+          <div class="color-selector">
+            <div class="heading">Custom Colors</div>
+            <div class="colors">
+              <ul>
+                <li>
+                  <a href="#0" class="color-red" title="color-red"></a>
+                </li>
+                <li>
+                  <a href="#0" class="color-purple" title="color-purple"></a>
+                </li>
+                <li>
+                  <a href="#0" class="color-malt" title="color-malt"></a>
+                </li>
+                <li>
+                  <a href="#0" class="color-green" title="color-green"></a>
+                </li>
+                <li>
+                  <a href="#0" class="color-blue" title="color-blue"></a>
+                </li>
+                <li>
+                  <a href="#0" class="color-orange" title="color-orange"></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="contact-header">
+          Contact <span class="color"> Me</span>
+          <div class="contact-header-caption">
+            <span class="color"> Get</span> In Touch.
+          </div>
+        </div>
+        <div class="contact-content">
+          <!--Contact form-->
+          <div class="contact-form">
+            <div class="form-header">Message Me</div>
+            <form id="myForm" action="#">
+              <div class="input-line">
+                <input
+                  id="name"
+                  type="text"
+                  placeholder="Name"
+                  class="input-name"
+                />
+                <input
+                  id="email"
+                  type="email"
+                  placeholder="Email"
+                  class="input-name"
+                />
+              </div>
+              <input
+                type="text"
+                id="subject"
+                placeholder="subject"
+                class="input-subject"
+              />
+              <textarea
+                id="body"
+                class="input-textarea"
+                placeholder="message"
+              ></textarea>
+              <button type="button" id="submit" value="send">Submit</button>
+            </form>
+          </div>
+          <!--Contact form-->
+          <!--Contact information-->
+          <div class="contact-info">
+            <div class="contact-info-header">Contact Info</div>
+            <div class="contact-info-content">
+              <div class="contect-info-content-line">
+                <img
+                  src="./images/icon-name.png"
+                  class="icon"
+                  alt="name-icon"
+                />
+                <div class="contact-info-icon-text">
+                  <h6>Name</h6>
+                  <p>Elgiz İsmayilov</p>
+                </div>
+              </div>
+              <div class="contect-info-content-line">
+                <img
+                  src="./images/icon-location.png"
+                  class="icon"
+                  alt="location-icon"
+                />
+                <div class="contact-info-icon-text">
+                  <h6>Location</h6>
+                  <p>Baku, Azerbaidjan</p>
+                </div>
+              </div>
+              <div class="contect-info-content-line">
+                <img
+                  src="./images/icon-phone.png"
+                  class="icon"
+                  alt="phone-icon"
+                />
+                <div class="contact-info-icon-text">
+                  <h6>Call</h6>
+                  <p>+994705316407</p>
+                </div>
+              </div>
+
+              <div class="contect-info-content-line">
+                <img
+                  src="./images/icon-email.png"
+                  class="icon"
+                  alt="email-icon"
+                />
+                <div class="contact-info-icon-text">
+                  <h6>Email</h6>
+                  <p>elgiz.elgiz.ismayilov@gmail.com</p>
+                </div>
+              </div>
+            </div>
+            <!--Contact information end-->
+          </div>
+        </div>
+        <!--copyright-section You Can Remove After Downloading-->
+        <div class="footer">
+          <div class="footer-text">
+            <img
+              src="./images/copyright.png"
+              alt="copyright-img"
+              class="images"
+              height="14px"
+            />
+            Elgizismayilov 
+          </div>
+        </div>
+        <!--copyright-section-->
+      </div>
+      <!--contact end-->
+    </div>
+    <!--all the divisions-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
 </html>
